@@ -334,7 +334,7 @@ body {
     height: 250px;
     object-fit: contain;
     border-radius: var(--radius-sm);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .project-card p {
