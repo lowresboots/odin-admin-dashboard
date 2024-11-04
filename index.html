@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
-        
+
         <div class="sidebar">
             <div class="sidebar-logo">
                 <img src="assets/icons/dashboard-icon.svg" alt="Dashboard Icon" />
                 <span>Dashboard</span>
             </div>
-            
+
             <nav class="nav-links">
                 <div class="nav-item active">
                     <img src="assets/icons/home-icon.svg" alt="Home" />
@@ -44,14 +46,14 @@
                     Settings
                 </div>
             </nav>
-        
+
             <button class="theme-toggle" onclick="toggleTheme()">
                 <img src="assets/icons/moon-icon.svg" alt="Dark Mode" class="theme-icon moon">
                 <img src="assets/icons/sun-icon.svg" alt="Light Mode" class="theme-icon sun">
                 Toggle Theme
             </button>
         </div>
-            
+
         <header class="header">
             <div class="search-bar">
                 <img src="assets/icons/search-icon.svg" alt="Search" />
@@ -80,11 +82,103 @@
                 <span>lowresboots</span>
             </div>
         </header>
-            
+
         <main class="main-content">
-            
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Bootscamp</h3>
+                    <img src="assets/cards/bootscamp.jpg" alt="Bootscamp coding environment" class="bootscamp-image">
+                    <p>Welcome to Bootscamp, where we transform dedicated learners into skilled developers. Our
+                        intensive program covers everything from core fundamentals to advanced frameworks, designed to
+                        equip you with the most in-demand programming skills in today's tech industry. Through hands-on
+                        projects and real-world applications, you'll build the expertise needed to thrive in modern
+                        development.</p>
+
+                    <p>Our project-based curriculum ensures you're not just learning theory – you're building real
+                        applications, solving actual problems, and developing a professional portfolio. With dedicated
+                        mentorship and collaborative learning experiences, you'll gain practical skills that employers
+                        are actively seeking. Small class sizes and personalized attention ensure you never feel lost in
+                        the code. </p>
+
+                    <p>Join a community that's passionate about coding and committed to your success. Our network of
+                        industry professionals, career workshops, and exclusive job board connect you directly with
+                        opportunities at leading tech companies. Whether you're starting fresh or leveling up your
+                        skills, we're here to guide your journey into tech.</p>
+
+                    <p><a href="https://bootscamp.io" target="_blank">Put your boots on → bootscamp.io</a></p>
+
+                    <div class="card-actions">
+                        <span class="action-icon">
+                            <img src="assets/icons/star-icon.svg" alt="Star" />
+                        </span>
+                        <span class="action-icon">
+                            <img src="assets/icons/share-icon.svg" alt="Share" />
+                        </span>
+                        <span class="action-icon">
+                            <img src="assets/icons/more-icon.svg" alt="More" />
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="side-content">
+                <div class="announcements">
+                    <h3>Announcements</h3>
+                    <div class="announcement-list">
+                        <div class="announcement-item">
+                            <h4>Site Maintenance</h4>
+                            <p>Site maintenance is expected to begin soon and will continue indefinitely.</p>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="announcement-item">
+                            <h4>Community Share Day</h4>
+                            <p>Community Share Day has been canceled.</p>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="announcement-item">
+                            <h4>Updated Privacy Policy</h4>
+                            <p>Please review our updated privacy policy before maintenance mode begins.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trending">
+                    <h3>Trending</h3>
+                    <div class="trending-list">
+                        <div class="trending-item">
+                            <img src="assets/avatars/odin.jpg" alt="@Odin" class="avatar">
+                            <div class="trending-info">
+                                <p class="username">@Odin</p>
+                                <p class="project-name">The Odin Project</p>
+                            </div>
+                        </div>
+                        <div class="trending-item">
+                            <img src="assets/avatars/elonmusk.jpg" alt="@elonmusk" class="avatar">
+                            <div class="trending-info">
+                                <p class="username">@elonmusk</p>
+                                <p class="project-name">Diablo IV IRL</p>
+                            </div>
+                        </div>
+                        <div class="trending-item">
+                            <img src="assets/avatars/devstorymemory.jpg" alt="@devstorymemory" class="avatar">
+                            <div class="trending-info">
+                                <p class="username">@devstorymemory</p>
+                                <p class="project-name">pagesword</p>
+                            </div>
+                        </div>
+                        <div class="trending-item">
+                            <img src="assets/avatars/_setPedro.jpg" alt="@_setPedro" class="avatar">
+                            <div class="trending-info">
+                                <p class="username">@_setPedro</p>
+                                <p class="project-name">SolanaMirror</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
