@@ -1,3 +1,19 @@
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Dashboard initialized');
+    const notificationContainer = document.querySelector('.notification-container');
+    const notificationBadge = document.querySelector('.notification-badge');
+    const notificationMenu = document.querySelector('.notification-menu');
+    
+    notificationContainer.addEventListener('click', function(e) {
+        notificationMenu.classList.toggle('active');
+        if (notificationBadge) {
+            notificationBadge.style.display = 'none';
+        }
+        e.stopPropagation();
+    });
+
+    document.addEventListener('click', function(e) {
+        if (!notificationContainer.contains(e.target)) {
+            notificationMenu.classList.remove('active');
+        }
+    });
 });
