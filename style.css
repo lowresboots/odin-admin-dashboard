@@ -236,6 +236,11 @@ body {
     animation: slideDown 0.2s ease;
 }
 
+.notification-content .username {
+    color: var(--primary);
+    font-weight: 500;
+}
+
 @keyframes slideDown {
     from {
         opacity: 0;
